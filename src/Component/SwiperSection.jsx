@@ -18,9 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
  function SwiperSection() {
 
     const textRef = useRef(null);
-    const swiperRef = useRef(null);
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);  
+    const swiperRef = useRef(null); 
 
     useEffect(() => {
         if (textRef.current) {
@@ -67,8 +65,8 @@ gsap.registerPlugin(ScrollTrigger);
           clickable: true,
         }}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiperButtonNext',
+          prevEl: '.swiperButtonPrev',
         }}
         modules={[Navigation, Pagination]} className="mySwiper" ref={swiperRef}>
         <SwiperSlide>
@@ -138,8 +136,8 @@ gsap.registerPlugin(ScrollTrigger);
             </div>
         </SwiperSlide>
         <div className="buttons">
-        <div className="swiperButtonPrev" ref={prevRef}>◀</div>
-        <div className="swiperButtonNext" ref={nextRef}>▶</div>
+        <div className="swiperButtonPrev" >Prev</div>
+        <div className="swiperButtonNext" >Next</div>
         </div>
       </Swiper>
     </>

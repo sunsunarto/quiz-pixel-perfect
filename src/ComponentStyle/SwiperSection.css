@@ -34,7 +34,9 @@
         color: #000000;
         display: flex;
         gap: 30px;
-        justify-content: end;
+        justify-content: space-between;
+        margin: 0 5.729vw;
+        cursor: pointer;
     }
 }
 .swiper3, .swiper5{
