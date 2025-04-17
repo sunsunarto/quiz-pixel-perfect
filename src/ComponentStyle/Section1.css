@@ -1,0 +1,31 @@
+.mainSection1{
+    width: 100vw;
+    margin-bottom: 5.052vw;
+    .section1Con{
+        .sectionText{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin : 0 5.729vw;
+            .left{
+                h1{
+                    font-size: 4.167vw;
+                }
+            }
+            .right{
+                p{
+                    font-size: 1.458vw;
+                }
+            }
+        }
+        .sectionVideo{
+            margin-top: 2.656vw;
+            display: flex;
+            justify-content: center;
+            video{
+                width: 68.333vw;
+                border-radius: 2.656vw;
+            }
+        }
+    }
+}
